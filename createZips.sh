@@ -18,6 +18,6 @@ firefoxZipCommand="zip $excludeFirefox -r HTMW-ad-removal-firefox.zip ."
 eval "$firefoxZipCommand"
 
 pushd ..
-    chromeZipCommand="zip $excludeChrome -r HTMW-ad-removal-chrome.zip $foldername"
+    chromeZipCommand="zip $excludeChrome -r '$foldername/HTMW-ad-removal-chrome.zip' '$foldername'"
     eval "$chromeZipCommand"
 popd

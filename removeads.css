@@ -1,0 +1,3 @@
+.pa-global-class, .ad-panel, #adblocker-notice, .icADSlot, [id^='ad_is'], .fw-block {
+    display: none;
+}
