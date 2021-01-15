@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "HTMW Ad Remover",
+  "version": "1.0",
+
+  "description": "Removes ads on HowTheMarketWorks.com",
+
+  "icons": {
+    "48": "icons/cancel.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.howthemarketworks.com/*"],
+      "js": ["removeads.js"]
+    }
+  ]
+
+}
