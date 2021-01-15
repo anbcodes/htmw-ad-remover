@@ -1,10 +1,14 @@
-document.querySelectorAll(".pa-global-class, .ad-panel, #adblocker-notice, .icADSlot, [id^='ad_is']").forEach(function (node) {
-    node.style.display = 'none'
-});
+"use strict";
 
-setInterval(function () {
-    document.querySelectorAll(".pa-global-class, .ad-panel, #adblocker-notice, .icADSlot, [id^='ad_is']")
-    .forEach(function (node) {
-            node.style.display = 'none'
-    })
-}, 1000);
+var query = ".pa-global-class, .ad-panel, #adblocker-notice, .icADSlot, [id^='ad_is']";
+
+function hide() {
+    var results = document.querySelectorAll(query);
+    for (let i = 0; i < results.length; i++) {
+        results[i].style.display = 'none';
+    }
+}
+
+hide();
+
+setInterval(hide, 1000);
