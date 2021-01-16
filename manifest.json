@@ -1,10 +1,10 @@
 {
 
   "manifest_version": 2,
-  "name": "HTMW Ad Remover",
+  "name": "HTMW Ad Hider",
   "version": "1.3",
 
-  "description": "Removes ads on HowTheMarketWorks.com",
+  "description": "Hides ads on HowTheMarketWorks.com",
 
   "icons": {
     "48": "icons/cancel.png"
